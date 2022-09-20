@@ -17,9 +17,19 @@
 }
 #columnaIzquierda ul li a img {
     width: 550px;
-    height: 300px;
+    height: 200px;
     margin-left: 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+    transition: all 200ms;
 }
+#columnaIzquierda ul li a img:hover{
+    box-shadow: 5px 5px 20px -11px #061e24;
+    transform: scale(1.15);
+    z-index: 1;
+}
+
 
 #columnaDerecha {
     width: 350px;
@@ -33,7 +43,7 @@
 
 #noticia-destacada img{
     width: 300px;
-    margin-left: 25px;
+    margin: 20px; 
 } 
 
 #acceso01 {
