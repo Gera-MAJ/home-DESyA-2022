@@ -45,11 +45,19 @@
 }
 #noticia-destacada {
     align-items: center;
+    border: 2px orange solid;
+}
+#noticia-destacada h3 {
+    padding-left: 20px;
+}
+
+#noticia-destacada p {
+    padding-left: 10px;
 }
 
 #noticia-destacada img{
     width: 300px;
-    margin: 20px; 
+    margin: 22.5px; 
 } 
 
 #acceso01 {
