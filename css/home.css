@@ -12,6 +12,7 @@
     float: left;
     align-items: center;
     border: 2px solid blue;
+    
 }
 
 #columnaIzquierda ul li {
@@ -24,17 +25,19 @@
     margin-left: 25px;
     border-radius: 4px;
     /* margin-top: -20px; */
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     position: relative;
     z-index: 0;
     transition: transform 200ms;
+    /* filter: grayscale(20%);  */
+    /* aca se hace las imagenes a blanco y negro */
 }
 
 #columnaIzquierda ul li a img:hover{
     box-shadow: 5px 5px 20px -11px #061e24;
-    transform: scale(1.1);
+    transform: scale(1.08);
     z-index: 1;
-    top: 50%;
+    border: 4px solid blue;
 }
 
 /* aca va todo lo que corresponde a la columna de la derecha */
@@ -70,9 +73,20 @@
 }
 #acceso01 ul li{
     list-style: none;  
+    position: relative;
 } 
+
+#acceso01 ul li img {
+    display: inline-block;
+    
+}
+
 #acceso01 ul li a {
-    text-decoration: none;  
+    text-decoration: none;
+    margin-left: 10px;  
+    border: 2px solid red;
+    position: absolute;
+    -webkit-transform: translateY(20%);
 } 
 
 #acceso02 {
