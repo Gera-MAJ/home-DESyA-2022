@@ -11,34 +11,33 @@
     width: 700px;
     float: left;
     align-items: center;
-    border: 2px solid blue;
-    
+    border: 2px solid blue;   
 }
 
-#columnaIzquierda ul li {
-    list-style: none;
-}
+    #columnaIzquierda ul li {
+        list-style: none;
+    }
 
-#columnaIzquierda ul li a img {
-    width: 650px;
-    height: 200px;
-    margin-left: 25px;
-    border-radius: 4px;
-    /* margin-top: -20px; */
-    margin-bottom: -10px;
-    position: relative;
-    z-index: 0;
-    transition: transform 200ms;
-    /* filter: grayscale(20%);  */
-    /* aca se hace las imagenes a blanco y negro */
-}
+        #columnaIzquierda ul li a img {
+            width: 650px;
+            height: 200px;
+            margin-left: 25px;
+            border-radius: 4px;
+            /* margin-top: -20px; */
+            margin-bottom: -10px;
+            position: relative;
+            z-index: 0;
+            transition: transform 200ms;
+            /* filter: grayscale(20%);  */
+            /* aca se hace las imagenes a blanco y negro */
+        }
 
-#columnaIzquierda ul li a img:hover{
-    box-shadow: 5px 5px 20px -11px #061e24;
-    transform: scale(1.08);
-    z-index: 1;
-    border: 4px solid blue;
-}
+            #columnaIzquierda ul li a img:hover{
+                box-shadow: 5px 5px 20px -11px #061e24;
+                transform: scale(1.08);
+                z-index: 1;
+                border: 4px solid blue;
+            }
 
 /* aca va todo lo que corresponde a la columna de la derecha */
 
@@ -54,57 +53,62 @@
     border: 2px orange solid;
 }
 
-#noticia-destacada h3 {
-    padding-left: 10px;
-}
+    #noticia-destacada h3 {
+        padding-left: 10px;
+    }
 
-#noticia-destacada p {
-    padding-left: 10px;
-}
+        #noticia-destacada p {
+            padding-left: 10px;
+        }
 
-#noticia-destacada img{
-    width: 200px;
-    margin: 22.5px; 
-} 
+            #noticia-destacada img{
+                width: 200px;
+                margin: 22.5px; 
+            } 
 
 #acceso01 {
     margin-top: 30px;
     border: 2px black solid;
 }
-#acceso01 ul li{
-    list-style: none;  
-    position: relative;
-} 
+    #acceso01 ul li{
+        list-style: none;  
+        position: relative;
+        border: 2px solid green;
+    } 
 
-#acceso01 ul li img {
-    display: inline-block;
-    
-}
+        #acceso01 ul li img {
+            display: inline-block;
+            margin: auto;
+        }
 
-#acceso01 ul li a {
-    text-decoration: none;
-    margin-left: 10px;  
-    border: 2px solid red;
-    position: absolute;
-    transform: translateY(20%);
-    -webkit-transform: translateY(20%);
-}
-#acceso01 ul li a:hover {
-    color: blue;
-} 
+            #acceso01 ul li a {
+                text-decoration: none;
+                margin-left: 5px;  
+                border: 2px solid red;
+                position: absolute;
+                /* transform: translateY(40%);
+                -webkit-transform: translateY(40%); */
+                transition: transform 200ms;
+                
+            }
+                #acceso01 ul li a:hover {
+                    color: blue;
+                    transform: scale(1.06);
+                } 
 
 #acceso02 {
     margin-top: 30px;
     border: 2px green solid;
 }
 
-#acceso02 ul li{
-    list-style: none;
-}
+    #acceso02 ul li{
+        list-style: none;
+    }
 
-#acceso02 ul li a {
-    text-decoration: none;
-}
+        #acceso02 ul li a {
+            text-decoration: none;
+        }
+
 
 .imagen {
     width: 80px;
