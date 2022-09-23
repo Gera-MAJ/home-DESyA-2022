@@ -88,6 +88,9 @@
     position: absolute;
     transform: translateY(20%);
     -webkit-transform: translateY(20%);
+}
+#acceso01 ul li a:hover {
+    color: blue;
 } 
 
 #acceso02 {
