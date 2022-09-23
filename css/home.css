@@ -8,7 +8,7 @@
 
 #columnaIzquierda {
     margin-top: 30px;
-    width: 700px;
+    width: 650px;
     float: left;
     align-items: center;
     border: 2px solid blue;   
@@ -19,7 +19,7 @@
     }
 
         #columnaIzquierda ul li a img {
-            width: 650px;
+            width: 600px;
             height: 200px;
             margin-left: 25px;
             border-radius: 4px;
@@ -42,7 +42,7 @@
 /* aca va todo lo que corresponde a la columna de la derecha */
 
 #columnaDerecha {
-    width: 250px;
+    width: 300px;
     float: left;
     margin-left: 20px;
     border: 2px red solid;
@@ -51,7 +51,7 @@
 
 #contenedor-der {
     position: fixed;
-    width: 250px;
+    width: 300px;
 }
 
 #noticia-destacada {
@@ -73,6 +73,10 @@
             } 
 
 
+.doble-reglon {
+    font-size: 30px;
+}
+
 #acceso01 {
     margin-top: 30px;
     border: 2px black solid;
@@ -82,29 +86,23 @@
         list-style: none;  
         position: relative;
         border: 2px solid green;
-    } 
+    }
 
-        #acceso01 ul li img {
-            display: inline-block;
-            margin: auto;
+        #acceso01 ul li a {
+            text-decoration: none;
+            margin-left: 5px;  
+            border: 2px solid red;
+            position: absolute;
+            text-align: left;
+            transform: translateY(10%);
+            -webkit-transform: translateY(10%);
+            font-size: 20px;
         }
+            #acceso01 ul li a:hover {
+                color: blue;
+            } 
 
-            #acceso01 ul li a {
-                text-decoration: none;
-                margin-left: 5px;  
-                border: 2px solid red;
-                position: absolute;
-                /* transform: translateY(40%);
-                -webkit-transform: translateY(40%); */
-                transition: transform 200ms;
-                
-            }
-                #acceso01 ul li a:hover {
-                    color: blue;
-                    transform: scale(1.06);
-                } 
 
-                
 #acceso02 {
     margin-top: 30px;
     border: 2px green solid;
@@ -116,12 +114,22 @@
     }
 
         #acceso02 ul li a {
+            margin-left: 5px;
             text-decoration: none;
+            border: 2px red solid;
+            position: absolute;
+            font-size: 20px;
+            text-align: left;
+            transform: translateY(35%);
+            -webkit-transform: translateY(35%);
         }
+            #acceso02 ul li a:hover {
+                color: blue;
+            }
 
 
 .imagen {
-    width: 80px;
+    width: 60px;
     height: 50px;
 }
 
