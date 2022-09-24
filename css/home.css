@@ -73,22 +73,19 @@
             } 
 
 
-.doble-reglon {
-    font-size: 30px;
-}
 
-#acceso01 {
+.acceso01 {
     margin-top: 30px;
     border: 2px black solid;
     
 }
-    #acceso01 ul li{
+    .acceso01 ul li{
         list-style: none;  
         position: relative;
         border: 2px solid green;
     }
 
-        #acceso01 ul li a {
+        .acceso01 ul li a {
             text-decoration: none;
             margin-left: 5px;  
             border: 2px solid red;
@@ -97,11 +94,15 @@
             transform: translateY(10%);
             -webkit-transform: translateY(10%);
             font-size: 20px;
+            color: black;
         }
-            #acceso01 ul li a:hover {
+        
+            .acceso01 ul li a:hover {
                 color: blue;
             } 
-
+            #doble-reglon {
+                font-size: 16px;
+            }
 
 #acceso02 {
     margin-top: 30px;
@@ -122,6 +123,7 @@
             text-align: left;
             transform: translateY(35%);
             -webkit-transform: translateY(35%);
+            color: black;
         }
             #acceso02 ul li a:hover {
                 color: blue;
