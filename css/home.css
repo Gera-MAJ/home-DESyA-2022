@@ -4,6 +4,9 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    width: 1000px;
+}
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
 #iconoMenu {
     display: none;
@@ -167,11 +170,11 @@
         display: none;
     }
     #iconoMenu {
-        display: block;
+        display: flex;
         position: absolute;
         z-index: 1;
-        top: 20%;
-        right: 2px;
+        top: 10%;
+        left: 150%;
         width: 50px;
     }
     
