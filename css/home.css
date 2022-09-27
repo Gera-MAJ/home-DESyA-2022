@@ -11,7 +11,7 @@
     width: 650px;
     float: left;
     align-items: center;
-    border: 2px solid blue;   
+    /* border: 2px solid blue;    */
 }
 
     #columnaIzquierda ul li {
@@ -34,7 +34,7 @@
 
         /* Esto sirve para que solo se ejecute, cuando está en una versión de escritorio.  */
         @media (hover :hover){
-            #columnaIzquierda ul li a img:hover{
+            #columnaIzquierda ul li a img:hover {
                 box-shadow: 5px 5px 20px -11px #061e24;
                 transform: scale(1.06);
                 z-index: 1;
@@ -80,13 +80,18 @@
 
 .acceso01 {
     margin-top: 30px;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     
 }
     .acceso01 ul li{
+        height: 60px;
         list-style: none;  
         position: relative;
         border: 2px solid green;
+        border-bottom-style: dashed;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
         /* con display flex logro que los items se centren en el eje vertical */
         display: flex;
         align-items: center;
@@ -95,7 +100,7 @@
         .acceso01 ul li a {
             text-decoration: none;
             margin-left: 60px;  
-            border: 2px solid red;
+            /* border: 2px solid red; */
             position: absolute;
             text-align: left;
             /* transform: translateY(50%);
@@ -104,28 +109,37 @@
             color: black;
             width: 220px;
         }
-        
-            .acceso01 ul li a:hover {
+            .acceso01 ul li a:hover{
                 color: blue;
+            }
+        /* con esta forma se le puede modificar el estilo a un hermano. Si son hijos, que le tiene que poner > para derivar por ejemplo: .acceso01 ul li img:hover > a */
+            .acceso01 ul li a:hover ~ img{
+                transform: scale(1.1);
             } 
             
 
 #acceso02 {
     margin-top: 30px;
-    border: 2px green solid;
-    
+    /* border: 2px green solid; */
 }
 
     #acceso02 ul li{
+        
+        height: 60px;
         list-style: none;
         display: flex;
         align-items: center;
+        border: 2px solid green;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
     }
 
         #acceso02 ul li a {
-            margin-left: 60px;
+            font-family: 'Lucida Sans';
+            margin-left: 70px;
             text-decoration: none;
-            border: 2px red solid;
+            /* border: 2px red solid; */
             position: absolute;
             font-size: 20px;
             text-align: left;
@@ -133,6 +147,9 @@
         }
             #acceso02 ul li a:hover {
                 color: blue;
+            }
+            #acceso02 ul li a:hover ~ img{
+                transform: scale(1.1);
             }
 
 
@@ -143,6 +160,8 @@
 
 
 
-@media screen and (min-width: 400px){
-    
+@media screen and (max-width: 400px){
+    #columnaDerecha{
+        display: none;
+    }
 }
