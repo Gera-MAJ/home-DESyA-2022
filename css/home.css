@@ -83,18 +83,22 @@
         list-style: none;  
         position: relative;
         border: 2px solid green;
+        /* con display flex logro que los items se centren en el eje vertical */
+        display: flex;
+        align-items: center;
     }
 
         .acceso01 ul li a {
             text-decoration: none;
-            margin-left: 5px;  
+            margin-left: 60px;  
             border: 2px solid red;
             position: absolute;
             text-align: left;
-            transform: translateY(10%);
-            -webkit-transform: translateY(10%);
+            /* transform: translateY(50%);
+            -webkit-transform: translateY(50%); */
             font-size: 20px;
             color: black;
+            width: 220px;
         }
         
             .acceso01 ul li a:hover {
