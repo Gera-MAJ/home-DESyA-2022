@@ -32,12 +32,16 @@
             /* aca se hace las imagenes a blanco y negro */
         }
 
+        /* Esto sirve para que solo se ejecute, cuando está en una versión de escritorio.  */
+        @media (hover :hover){
             #columnaIzquierda ul li a img:hover{
                 box-shadow: 5px 5px 20px -11px #061e24;
                 transform: scale(1.06);
                 z-index: 1;
                 border: 4px solid blue;
-            }
+            } 
+        }
+            
 
 /* aca va todo lo que corresponde a la columna de la derecha */
 
@@ -104,9 +108,7 @@
             .acceso01 ul li a:hover {
                 color: blue;
             } 
-            #doble-reglon {
-                font-size: 16px;
-            }
+            
 
 #acceso02 {
     margin-top: 30px;
@@ -116,17 +118,17 @@
 
     #acceso02 ul li{
         list-style: none;
+        display: flex;
+        align-items: center;
     }
 
         #acceso02 ul li a {
-            margin-left: 5px;
+            margin-left: 60px;
             text-decoration: none;
             border: 2px red solid;
             position: absolute;
             font-size: 20px;
             text-align: left;
-            transform: translateY(35%);
-            -webkit-transform: translateY(35%);
             color: black;
         }
             #acceso02 ul li a:hover {
