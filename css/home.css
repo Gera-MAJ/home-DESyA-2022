@@ -5,7 +5,9 @@
 }
 
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
-
+#iconoMenu {
+    display: none;
+}
 #columnaIzquierda {
     margin-top: 30px;
     width: 650px;
@@ -84,7 +86,7 @@
     
 }
     .acceso01 ul li{
-        height: 60px;
+        height: 65px;
         list-style: none;  
         position: relative;
         border: 2px solid green;
@@ -99,7 +101,7 @@
 
         .acceso01 ul li a {
             text-decoration: none;
-            margin-left: 60px;  
+            margin-left: 65px;  
             /* border: 2px solid red; */
             position: absolute;
             text-align: left;
@@ -164,4 +166,13 @@
     #columnaDerecha{
         display: none;
     }
+    #iconoMenu {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        right: 2px;
+        width: 50px;
+    }
+    
 }
