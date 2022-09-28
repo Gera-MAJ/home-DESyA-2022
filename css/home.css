@@ -52,10 +52,9 @@ body {
 
 #columnaDerecha {
     width: 300px;
-    float: left;
+    display: flex;
     margin-left: 20px;
     border: 2px red solid;
-    
 }
 
 #contenedor-der {
@@ -165,7 +164,7 @@ body {
 
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     #columnaDerecha{
         display: none;
     }
@@ -173,9 +172,13 @@ body {
         display: flex;
         position: absolute;
         z-index: 1;
-        top: 10%;
+        top: 8%;
         left: 150%;
-        width: 50px;
+        height: 100px;
+    }
+
+    .imagen {
+        margin-top: 20px;
     }
     
 }
