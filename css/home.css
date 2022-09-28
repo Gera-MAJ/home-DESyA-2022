@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 1000px;
+    max-width: 1000px;
 }
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
 #iconoMenu {
@@ -29,7 +29,7 @@ body {
             margin-left: 25px;
             border-radius: 4px;
             /* margin-top: -20px; */
-            margin-bottom: -10px;
+            margin-bottom: 15px;
             position: relative;
             z-index: 0;
             transition: transform 200ms;
@@ -54,7 +54,7 @@ body {
     width: 300px;
     display: flex;
     margin-left: 20px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 #contenedor-der {
@@ -91,7 +91,7 @@ body {
         height: 65px;
         list-style: none;  
         position: relative;
-        border: 2px solid green;
+        border: 2px solid red;
         border-bottom-style: dashed;
         border-top-style: none;
         border-left-style: none;
@@ -169,8 +169,17 @@ body {
         max-width: 400px;
     }
     #columnaDerecha{
-        display: none;
+    
+        position: fixed;
+        right: 2%;
+        top: 10%;
     }
+    
+    #contenedor-der {
+        background-color: aliceblue;
+        width: 350px;
+    }
+
     #iconoMenu {
         display: flex;
         position: absolute;
@@ -186,6 +195,26 @@ body {
         width: 600px;
         height: 200px;
         margin-left: 20px;
+        margin-right: 20px;
     }
     
+    .acceso01 ul li {
+        border: none;
+    }
+        .acceso01 ul li a {
+            margin-left: 80px;
+        }
+            .acceso01 ul li a ~ img {
+                margin-left: 10px;
+            }
+
+    #acceso02 ul li {
+        border: none;
+    }
+        #acceso02 ul li a {
+            margin-left: 80px;
+        }
+            #acceso02 ul li a ~ img {
+                margin-left: 10px;
+            }
 }
