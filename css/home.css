@@ -91,7 +91,7 @@ body {
         height: 65px;
         list-style: none;  
         position: relative;
-        border: 2px solid red;
+        border: 2px solid green;
         border-bottom-style: dashed;
         border-top-style: none;
         border-left-style: none;
@@ -174,7 +174,7 @@ body {
         right: 2%;
         top: 10%;
     }
-    
+
     #contenedor-der {
         background-color: aliceblue;
         width: 350px;
@@ -217,4 +217,9 @@ body {
             #acceso02 ul li a ~ img {
                 margin-left: 10px;
             }
+
+        
+    #noticia-destacada p {
+        padding: 5px 30px 10px 10px;
+    }        
 }
