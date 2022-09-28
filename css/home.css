@@ -164,7 +164,10 @@ body {
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
+    body {
+        max-width: 400px;
+    }
     #columnaDerecha{
         display: none;
     }
@@ -172,13 +175,17 @@ body {
         display: flex;
         position: absolute;
         z-index: 1;
-        top: 8%;
+        top: 9%;
         left: 150%;
-        height: 100px;
+        width: 50px;
+        opacity: 60%;
     }
 
-    .imagen {
+    #columnaIzquierda .imagen {
         margin-top: 20px;
+        width: 600px;
+        height: 200px;
+        margin-left: 20px;
     }
     
 }
