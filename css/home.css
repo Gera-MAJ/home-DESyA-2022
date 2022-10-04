@@ -164,15 +164,16 @@ body {
 
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     body {
-        max-width: 400px;
+        width: clamp(200px, 350px, 450px);
     }
     #columnaDerecha{
-    
-        position: fixed;
+        
         right: -1000px;
         top: 10%;
+        transition: position 200ms;
+        
     }
 
     #contenedor-der {
@@ -184,18 +185,19 @@ body {
         display: flex;
         position: absolute;
         z-index: 1;
-        top: 9%;
-        left: 150%;
+        top: 8%;    
+        left: 140%;
         width: 50px;
         opacity: 60%;
     }
-
+    
     #columnaIzquierda .imagen {
         margin-top: 20px;
-        width: 600px;
+        width: clamp(450px, 620px, 1250px);
         height: 200px;
         margin-left: 20px;
         margin-right: 20px;
+        z-index: -1;
     }
     
     .acceso01 ul li {
@@ -221,5 +223,15 @@ body {
         
     #noticia-destacada p {
         padding: 5px 30px 10px 10px;
-    }        
+    }      
+    #fondoMenu {
+        display: none;
+        position: fixed;
+        z-index: 0;
+        height: 1500px; 
+        width: 1400px;
+        /* si quiero cambiar la opacidad sin que se afecte a los hijos, tengo que hacerlo desde el color */
+        background-color: rgba(0, 0, 0, 0.741);
+        
+    }
 }

@@ -1,11 +1,21 @@
 
 const columnaDerecha = document.getElementById('columnaDerecha');
+const fondoMenu =  document.getElementById('fondoMenu');
 const iconoMenu = document.getElementById('iconoMenu')
 
-iconoMenu.addEventListener('click', sacarMenu)
+
+iconoMenu.addEventListener('click', aparecerMenu)
+fondoMenu.addEventListener('click', desaparecerMenu)
 
 
-
-function sacarMenu(){
-    columnaDerecha.style.right = "200px";   
+function aparecerMenu(){
+    columnaDerecha.style.right = "40px";
+    iconoMenu.style.display = "none"
+    fondoMenu.style.display = "block"  
 }
+
+function desaparecerMenu(){
+    fondoMenu.style.display = "none";
+    columnaDerecha.style.right = "-1000px";
+    iconoMenu.style.display = "block";
+}    
