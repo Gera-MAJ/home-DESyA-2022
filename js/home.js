@@ -14,15 +14,14 @@ fondoMenu.addEventListener('click', (e) => {
     iconoMenu.style.display = "block";
 })
 
-
 function aparecerMenu(){
-    columnaDerecha.style.right = "-300px";
+    columnaDerecha.style.right = "-280px";
     iconoMenu.style.display = "none"
     fondoMenu.style.display = "block"  
 }
 
-function desaparecerMenu(){
-    fondoMenu.style.display = "none";
-    columnaDerecha.style.right = "-1000px";
-    iconoMenu.style.display = "block";
-}    
+// function desaparecerMenu(){
+//     fondoMenu.style.display = "none";
+//     columnaDerecha.style.right = "-1000px";
+//     iconoMenu.style.display = "block";
+// }    
