@@ -4,197 +4,188 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    max-width: 1000px;
-}
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
-#iconoMenu {
-    display: none;
-}
-#columnaIzquierda {
-    margin-top: 30px;
-    width: 650px;
-    float: left;
-    align-items: center;
-    /* border: 2px solid blue;    */
-}
 
-    #columnaIzquierda ul li {
-        list-style: none;
+    #iconoMenu {
+        display: none;
+        float: left;
+        border: 2px solid blue;
+        margin-left: 40px;
     }
-
-        #columnaIzquierda ul li a img {
-            width: 600px;
-            height: 200px;
-            margin-left: 25px;
-            border-radius: 4px;
-            /* margin-top: -20px; */
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 0;
-            transition: transform 200ms;
-            /* filter: grayscale(20%);  */
-            /* aca se hace las imagenes a blanco y negro */
-        }
-
-        /* Esto sirve para que solo se ejecute, cuando está en una versión de escritorio.  */
-        @media (hover :hover){
-            #columnaIzquierda ul li a img:hover {
-                box-shadow: 5px 5px 20px -11px #061e24;
-                transform: scale(1.03);
-                z-index: 1;
-                border: 4px solid blue;
-            } 
-        }
-            
-
-/* aca va todo lo que corresponde a la columna de la derecha */
-
-#columnaDerecha {
-    width: 300px;
-    display: flex;
-    margin-left: 20px;
-    /* border: 2px red solid; */
-}
-
-#contenedor-der {
-    position: fixed;
-    width: 300px;
-}
-
-#noticia-destacada {
-    align-items: center;
-    border: 2px orange solid;
-}
-
-    #noticia-destacada h3 {
-        padding-left: 10px;
+    #columnaIzquierda {
+        margin-top: 30px;
+        width: 650px;
+        float: left;
+        align-items: center;
+        /* border: 2px solid blue;    */
     }
-
-        #noticia-destacada p {
+    
+        #columnaIzquierda ul li {
+            list-style: none;
+        }
+    
+            #columnaIzquierda ul li a img {
+                width: 600px;
+                height: 200px;
+                margin-left: 25px;
+                border-radius: 4px;
+                /* margin-top: -20px; */
+                margin-bottom: 15px;
+                position: relative;
+                z-index: 0;
+                transition: transform 200ms;
+                /* filter: grayscale(20%);  */
+                /* aca se hace las imagenes a blanco y negro */
+            }
+    
+            /* Esto sirve para que solo se ejecute, cuando está en una versión de escritorio.  */
+            @media (hover :hover){
+                #columnaIzquierda ul li a img:hover {
+                    box-shadow: 5px 5px 20px -11px #061e24;
+                    transform: scale(1.03);
+                    z-index: 1;
+                    border: 4px solid blue;
+                } 
+            }
+                
+    
+    /* aca va todo lo que corresponde a la columna de la derecha */
+    
+    #columnaDerecha {
+        width: 300px;
+        display: flex;
+        margin-left: 20px;
+        /* border: 2px red solid; */
+    }
+    
+    #contenedor-der {
+        position: fixed;
+        width: 300px;
+    }
+    
+    #noticia-destacada {
+        align-items: center;
+        border: 2px orange solid;
+    }
+    
+        #noticia-destacada h3 {
             padding-left: 10px;
         }
-
-            #noticia-destacada img{
-                width: 200px;
-                margin: 22.5px; 
-            } 
-
-
-
-.acceso01 {
-    margin-top: 30px;
-    /* border: 2px black solid; */
     
-}
-    .acceso01 ul li{
-        height: 65px;
-        list-style: none;  
-        position: relative;
-        border: 2px solid green;
-        border-bottom-style: dashed;
-        border-top-style: none;
-        border-left-style: none;
-        border-right-style: none;
-        /* con display flex logro que los items se centren en el eje vertical */
-        display: flex;
-        align-items: center;
-    }
-
-        .acceso01 ul li a {
-            text-decoration: none;
-            margin-left: 65px;  
-            /* border: 2px solid red; */
-            position: absolute;
-            text-align: left;
-            /* transform: translateY(50%);
-            -webkit-transform: translateY(50%); */
-            font-size: 20px;
-            color: black;
-            width: 220px;
-        }
-            .acceso01 ul li a:hover{
-                color: blue;
+            #noticia-destacada p {
+                padding-left: 10px;
             }
-        /* con esta forma se le puede modificar el estilo a un hermano. Si son hijos, que le tiene que poner > para derivar por ejemplo: .acceso01 ul li img:hover > a */
-            .acceso01 ul li a:hover ~ img{
-                transform: scale(1.1);
-            } 
-            
-
-#acceso02 {
-    margin-top: 30px;
-    /* border: 2px green solid; */
-}
-
-    #acceso02 ul li{
+    
+                #noticia-destacada img{
+                    width: 200px;
+                    margin: 22.5px; 
+                } 
+    
+    
+    
+    .acceso01 {
+        margin-top: 30px;
+        /* border: 2px black solid; */
         
-        height: 60px;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        border: 2px solid green;
-        border-top-style: none;
-        border-left-style: none;
-        border-right-style: none;
+    }
+        .acceso01 ul li{
+            height: 65px;
+            list-style: none;  
+            position: relative;
+            border: 2px solid green;
+            border-bottom-style: dashed;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            /* con display flex logro que los items se centren en el eje vertical */
+            display: flex;
+            align-items: center;
+        }
+    
+            .acceso01 ul li a {
+                text-decoration: none;
+                margin-left: 65px;  
+                /* border: 2px solid red; */
+                position: absolute;
+                text-align: left;
+                /* transform: translateY(50%);
+                -webkit-transform: translateY(50%); */
+                font-size: 20px;
+                color: black;
+                width: 220px;
+            }
+                .acceso01 ul li a:hover{
+                    color: blue;
+                }
+            /* con esta forma se le puede modificar el estilo a un hermano. Si son hijos, que le tiene que poner > para derivar por ejemplo: .acceso01 ul li img:hover > a */
+                .acceso01 ul li a:hover ~ img{
+                    transform: scale(1.1);
+                } 
+                
+    
+    #acceso02 {
+        margin-top: 30px;
+        /* border: 2px green solid; */
+    }
+    
+        #acceso02 ul li{
+            
+            height: 60px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            border: 2px solid green;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+        }
+    
+            #acceso02 ul li a {
+                font-family: 'Lucida Sans';
+                margin-left: 70px;
+                text-decoration: none;
+                /* border: 2px red solid; */
+                position: absolute;
+                font-size: 20px;
+                text-align: left;
+                color: black;
+            }
+                #acceso02 ul li a:hover {
+                    color: blue;
+                }
+                #acceso02 ul li a:hover ~ img{
+                    transform: scale(1.1);
+                }
+    
+    
+    .imagen {
+        width: 60px;
+        height: 50px;
     }
 
-        #acceso02 ul li a {
-            font-family: 'Lucida Sans';
-            margin-left: 70px;
-            text-decoration: none;
-            /* border: 2px red solid; */
-            position: absolute;
-            font-size: 20px;
-            text-align: left;
-            color: black;
-        }
-            #acceso02 ul li a:hover {
-                color: blue;
-            }
-            #acceso02 ul li a:hover ~ img{
-                transform: scale(1.1);
-            }
-
-
-.imagen {
-    width: 60px;
-    height: 50px;
-}
-
-#iconoMenu{
-    display: none;
-}
 
 @media screen and (max-width: 450px){
-    /* body {
-        max-width: 300px;
-        min-width: 200px;
-        border: 2px red solid;
-    } */
+    
     #columnaDerecha{
         position: relative;
         right: -1000px;
         top: 10%;
         transition: position 200ms;
-       
     }
 
     #contenedor-der {
         background-color: aliceblue;
-        width: 350px;
-        
+        width: 350px; 
     }
 
     #iconoMenu {
-        display: flex;
+        display: block;
         position: fixed;
         z-index: 1;
         top: 5%;    
         right: 5%;
         width: 50px;
-        opacity: 60%;
-        
+        opacity: 60%;   
     }
     
     #columnaIzquierda .imagen {
@@ -228,14 +219,13 @@ body {
             }
 
      
-
     #noticia-destacada p {
         padding: 5px 30px 10px 10px;
     } 
 
     #fondoMenu {
-        display: none;
         position: fixed;
+        display: none;
         z-index: 0;
         height: 1450px; 
         width: 700px;
