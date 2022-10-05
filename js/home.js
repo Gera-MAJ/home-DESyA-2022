@@ -5,7 +5,14 @@ const iconoMenu = document.getElementById('iconoMenu')
 
 
 iconoMenu.addEventListener('click', aparecerMenu)
-fondoMenu.addEventListener('click', desaparecerMenu)
+//El stopPropagation, como el columna derecha es hijo del fondo menu, este le afectaba todo. Con el stoppropagation, detengo esa afectacion. 
+columnaDerecha.addEventListener('click', e => {e.stopPropagation()})
+fondoMenu.addEventListener('click', (e) => {
+    
+    fondoMenu.style.display = "none";
+    columnaDerecha.style.right = "-1000px";
+    iconoMenu.style.display = "block";
+})
 
 
 function aparecerMenu(){
