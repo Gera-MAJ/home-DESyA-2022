@@ -12,8 +12,8 @@ fondoMenu.addEventListener('click', (e) => {
     fondoMenu.style.display = "none";
     columnaDerecha.style.right = "-1000px";
     iconoMenu.style.visibility = "visible";
-    
 })
+
 
 function aparecerMenu(){
     columnaDerecha.style.right = "-280px";

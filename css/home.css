@@ -170,7 +170,6 @@
         position: relative;
         right: -1000px;
         top: 10%;
-        transition: position 200ms;
     }
 
     #contenedor-der {
@@ -239,6 +238,5 @@
         width: 700px;
         /* si quiero cambiar la opacidad sin que se afecte a los hijos, tengo que hacerlo desde el color */
         background-color: rgba(0, 0, 0, 0.741);
-        
     }
 }
