@@ -9,7 +9,7 @@ fondoMenu.addEventListener('click', desaparecerMenu)
 
 
 function aparecerMenu(){
-    columnaDerecha.style.right = "40px";
+    columnaDerecha.style.right = "-300px";
     iconoMenu.style.display = "none"
     fondoMenu.style.display = "block"  
 }
