@@ -11,13 +11,14 @@ fondoMenu.addEventListener('click', (e) => {
     
     fondoMenu.style.display = "none";
     columnaDerecha.style.right = "-1000px";
-    iconoMenu.style.display = "block";
+    iconoMenu.style.visibility = "visible";
+    
 })
 
 function aparecerMenu(){
     columnaDerecha.style.right = "-280px";
-    iconoMenu.style.display = "none"
-    fondoMenu.style.display = "block"  
+    iconoMenu.style.visibility = "hidden"
+    fondoMenu.style.display = "block" 
 }
 
 // function desaparecerMenu(){
