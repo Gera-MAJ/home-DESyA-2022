@@ -17,6 +17,7 @@
         width: 650px;
         float: left;
         align-items: center;
+        margin-right: 10px;
         /* border: 2px solid blue;    */
     }
     
@@ -25,7 +26,7 @@
         }
     
             #columnaIzquierda ul li a img {
-                width: 600px;
+                width: 580px;
                 height: 200px;
                 margin-left: 25px;
                 border-radius: 4px;
