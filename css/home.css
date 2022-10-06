@@ -182,10 +182,12 @@
         visibility: visible;
         position: fixed;
         z-index: 1;
-        top: 5%;    
-        right: 5%;
+        top: 4%;    
+        right: 6%;
         width: 50px;
-        opacity: 60%;   
+        opacity: 70%;
+        background-color: rgba(240, 248, 255, 0.463);
+        border-radius: 4px;   
     }
     
     #columnaIzquierda .imagen {
