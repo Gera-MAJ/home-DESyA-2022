@@ -93,8 +93,8 @@
             height: 65px;
             list-style: none;  
             position: relative;
-            border: 2px solid green;
-            border-bottom-style: dashed;
+            border: 2px solid #08A6D6;
+            /* border-bottom-style: dashed; */
             border-top-style: none;
             border-left-style: none;
             border-right-style: none;
@@ -120,7 +120,7 @@
                 }
             /* con esta forma se le puede modificar el estilo a un hermano. Si son hijos, que le tiene que poner > para derivar por ejemplo: .acceso01 ul li img:hover > a */
                 .acceso01 ul li a:hover ~ img{
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 } 
                 
     
@@ -135,7 +135,7 @@
             list-style: none;
             display: flex;
             align-items: center;
-            border: 2px solid green;
+            border: 2px solid #08A6D6;
             border-top-style: none;
             border-left-style: none;
             border-right-style: none;
@@ -155,7 +155,7 @@
                     color: blue;
                 }
                 #acceso02 ul li a:hover ~ img{
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
     
     
@@ -183,7 +183,7 @@
         visibility: visible;
         position: fixed;
         z-index: 1;
-        top: 4%;    
+        top: 5%;    
         right: 6%;
         width: 50px;
         opacity: 70%;
