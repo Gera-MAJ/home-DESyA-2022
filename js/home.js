@@ -16,9 +16,10 @@ fondoMenu.addEventListener('click', (e) => {
 
 
 function aparecerMenu(){
-    columnaDerecha.style.right = "-280px";
+    columnaDerecha.style.right = "-178px";
     iconoMenu.style.visibility = "hidden"
     fondoMenu.style.display = "block" 
+    columnaDerecha.style.transition = '200ms';
 }
 
 // function desaparecerMenu(){
