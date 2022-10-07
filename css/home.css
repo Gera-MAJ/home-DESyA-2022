@@ -63,6 +63,7 @@
         display: flex;
         margin-left: 20px;
         /* border: 2px red solid; */
+        transition: all 1200ms;
     }
     
     #contenedor-der {
@@ -73,6 +74,7 @@
     #noticia-destacada {
         align-items: center;
         border: 2px #08A6D6 solid;
+        margin-top: 10px;
     }
     
         #noticia-destacada h3 {
@@ -98,10 +100,12 @@
                         color: black;
                     }
                         #noticia-destacada h2{
-                            padding: 10px;
+                            margin-top: 10px;
+                            margin-bottom: 0px;
                             text-align: center;
-                            font-size: 22px;
+                            font-size: 20px;
                             font-family: sans-serif;
+                            font-style: italic;
                         }
                             #noticia-destacada #enlaceNoticia {
                                 color: #08A6D6;
@@ -157,7 +161,7 @@
     
         #acceso02 ul li{
             
-            height: 60px;
+            height: 65px;
             list-style: none;
             display: flex;
             align-items: center;
@@ -182,6 +186,7 @@
                 }
                 #acceso02 ul li a:hover ~ img{
                     transform: scale(1.2);
+
                 }
     
     
@@ -230,6 +235,8 @@
     }
     #noticia-destacada {
         height: 420px;
+        border: none;
+        border-bottom: #08A6D6 2px solid;
     }
         #noticia-destacada img{
             width: 340px;
@@ -238,14 +245,15 @@
         }
             #noticia-destacada h3 {
                 margin-left: 20px;
-                font-size: 23px;
+                font-size: 22px;
             }
                 #noticia-destacada p {
                     margin-left: 20px;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                     #noticia-destacada h2 {
                         font-style: italic;
+                        
                     }
 
     
@@ -273,16 +281,19 @@
 
     #acceso02 ul li {
         border: none;
-        
+        margin-top: 10px;
     }
         #acceso02 ul li a {
-            margin-left: 80px;
+            margin-left: 100px;
             height: 50px;
             display: flex;
             align-items: center;
+            font-size: 25px;
         }
             #acceso02 ul li a ~ img {
                 margin-left: 10px;
+                height: 140px;
+                width: 70px;
             }
 
      
