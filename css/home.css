@@ -200,6 +200,26 @@
 
 
 @media screen and (max-width: 450px){
+
+    /* acá vamos a colocar todo lo que corresponde al menu hamburguesa nuevo */
+    #menu_contenedor{
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+
+    #menu_contenedor span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        margin-top: 7px;
+    }
     
     #columnaDerecha{
         position: relative;
