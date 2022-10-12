@@ -1,7 +1,7 @@
 
 const columnaDerecha = document.querySelector('.columnaDerecha');
-const fondoMenu =  document.getElementById('fondoMenu');
-const iconoMenu = document.getElementById('iconoMenu')
+// const fondoMenu =  document.getElementById('fondoMenu');
+// const iconoMenu = document.getElementById('iconoMenu')
 
 document.getElementById('menu_contenedor').addEventListener('click', activarMenu)
 
@@ -20,7 +20,7 @@ function activarMenu(){
 
 // iconoMenu.addEventListener('click', aparecerMenu)
 //El stopPropagation, como el columna derecha es hijo del fondo menu, este le afectaba todo. Con el stoppropagation, detengo esa afectacion. 
-columnaDerecha.addEventListener('click', e => {e.stopPropagation()})
+// columnaDerecha.addEventListener('click', e => {e.stopPropagation()})
 
 // fondoMenu.addEventListener('click', (e) => {
     

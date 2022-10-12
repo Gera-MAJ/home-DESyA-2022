@@ -62,7 +62,7 @@
     
     /* aca va todo lo que corresponde a la columna de la derecha */
     
-    #columnaDerecha {
+    .columnaDerecha {
         width: 300px;
         display: flex;
         margin-left: 20px;
@@ -70,9 +70,9 @@
     }
     
     #contenedor-der {
-        position: fixed;
+        position: absolute;
         width: 300px;
-        
+        top: 5%;
     }
     
     #noticia-destacada {
@@ -208,12 +208,12 @@
     /* acá vamos a colocar todo lo que corresponde al menu hamburguesa nuevo */
     #menu_contenedor{
         display: block;
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
         /* background-color: red; */
         position: absolute;
-        top: 7%;
-        right: -46%;
+        top: 3%;
+        right: -48%;
         z-index: 2;
         cursor: pointer;
     }
@@ -221,21 +221,21 @@
     #menu_contenedor span {
         display: block;
         width: 100%;
-        height: 3px;
+        height: 4px;
         background-color: black;
-        margin-top: 5px;
+        margin-top: 8px;
         transition: transform 300ms;
         transform-origin: 0px 100%;
         
     }
 
     .active_line1_bars {
-        transform: rotate(45deg) translate(-3px, -1px);
+        transform: rotate(45deg) translate(-5px, -2px);
     }
     .active_line2_bars {
         
-        margin-left: -40px;
-        visibility: hidden;
+        /* margin-left: -40px; */
+        opacity: 0;
         
     }
     .active_line3_bars {
@@ -244,30 +244,31 @@
     
     /* aca empieza los estilos fuera del menu */
     .columnaDerecha{
+        /* position: absolute; */
         position: absolute;
         width: 800px;
         height: 2200px;
         background-color: aliceblue;
         /* border: 2px red solid; */
         z-index: 1;
-        left: -800px;
+        top: 0%;
+        left: -820px;
         transition: left 300ms;
     }
     
     .activar_columnaDerecha {
-        left: 0px;
+        left: -20px;
     }
 
     #contenedor-der {
-        top: 10%;
+        top: 5%;
         background-color: aliceblue;
         width: 450px;
         height: 1500px; 
         right: -40px;
         position: relative;
     }
-
-    
+   
     #fondoMenu {
         position: fixed;
         display: block;
@@ -291,23 +292,27 @@
         background-color: rgba(240, 248, 255, 0.463);
         border-radius: 4px;   
     }
-    
-    #columnaIzquierda .imagen {
-        margin-top: 10px;
-        width: 600px;
-        height: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
-        z-index: 0;
-        border: #061e24 2px solid;
+    #columnaIzquierda{
+        margin-top: 20%;
     }
-        #columnaIzquierda .imagen:hover{
-            transform: none;
+        #columnaIzquierda .imagen {
+            margin-top: 10px;
+            width: 600px;
+            height: 200px;
+            margin-left: 20px;
+            margin-right: 20px;
+            z-index: 0;
+            border: #061e24 2px solid;
         }
+            #columnaIzquierda .imagen:hover{
+                transform: none;
+            }
     #noticia-destacada {
         height: 420px;
         border: none;
-        /* border-bottom: #08A6D6 2px solid; */
+        background-color: aliceblue;
+        border: #08A6D6 2px solid;
+        margin-bottom: 80px;
     }
         #noticia-destacada img{
             width: 340px;
