@@ -1,4 +1,79 @@
-*{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESyA</title>
+    
+</head>
+<body>
+    
+    <div id="columnaIzquierda">
+             
+        <div class="menu_contenedor">
+            <span class="line1_bars"></span>
+            <span class="line2_bars"></span>
+            <span class="line3_bars"></span>
+        </div>
+
+        <ul>
+            <li> <a href="#"><img src="/img/3.png" alt="imagen03" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/4.png" alt="imagen04" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/5.png" alt="imagen05" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/6.png" alt="imagen06" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/1.png" alt="imagen01" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/8.png" alt="imagen08" class="imagen" ></a></li>
+            <li> <a href="#"><img src="/img/10.png" alt="imagen09" class="imagen" ></a></li>
+            <li><a href="#"><img src="/img/2.png" alt="imagen02" class="imagen" ></a></li>
+            
+            <li><a href="#"><img src="/img/7.png" alt="imagen07" class="imagen" ></a></li>
+            
+            
+            
+        </ul>
+        
+        
+    </div>
+        <div class="columnaDerecha">
+        
+                <div id="contenedor-der">
+                    <section id="noticias">
+                        <article id="noticia-destacada">
+                            <!-- <h2>Noticia Descatada</h2> -->
+                            <a href="#"><img src="/img/banner 03.jpg"></a>
+                            <a href="#"><h3>Avanzando en la conformación de los Laboratorios de Prácticas Profesionales</h3></a>
+                            <p>Durante el mes de septiembre se llevó a cabo una ardua labor en lo que respecta a la conformación de los Laboratorios de Prácticas en las siguientes instituciones de Nivel Superior de la provincia <a href="#" id="enlaceNoticia">... Leer más ...</a></p> 
+                        </article>              
+                    </section>
+                    <div id="secciones">
+                        <div class="acceso01">
+                            <ul>
+                                <li><a href="#">Carreras 2022</a><img src="/icons/carreras 01.svg" alt="icono01" class="imagen"></li>
+                                <li><a href="#">Diseños Curriculares</a><img src="/icons/planificaciones 01.svg" alt="icono02" class="imagen"></li>
+                                <li><a href="#" id="doble-reglon">Políticas Estudiantiles y Becas</a><img src="/icons/POLITICA.svg" alt="icono03" class="imagen"></li>
+                                <li><a href="#">Acciones de Gestión</a><img src="/icons/social 01.svg" alt="icono05" class="imagen"></li>
+                                <li><a href="#">Validez Nacional</a><img src="/icons/Nacional 01.svg" alt="icono04" class="imagen"></li>
+                            </ul>
+                        </div>
+                
+                        <div id="acceso02">
+                            <ul>
+                                <li><a href="#">Radio IES</a><img src="/icons/redio 02.svg" alt="icono08" class="imagen"></li>
+                                <li><a href="#">Concurso</a><img src="/icons/PREMIO 01.svg" alt="icono07" class="imagen"></li>
+                                <li><a href="#">Repositorio Invelec</a><img src="/icons/rEPOSITORIO 01.svg" alt="icono09" class="imagen"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                 
+        </div>
+    
+</body>
+
+<style>
+    *{
     margin: 0px;
     padding: 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -380,3 +455,26 @@
 
     
 }
+</style>
+
+<script>
+    const columnaDerecha = document.querySelector('.columnaDerecha');
+const menu_contenedor = document.querySelector('.menu_contenedor')
+
+document.querySelector('.menu_contenedor').addEventListener('click', activarMenu)
+
+const line1 = document.querySelector(".line1_bars");
+const line2 = document.querySelector(".line2_bars");
+const line3 = document.querySelector(".line3_bars");
+
+function activarMenu(){
+    line1.classList.toggle("active_line1_bars")
+    line2.classList.toggle("active_line2_bars")
+    line3.classList.toggle("active_line3_bars")
+
+    menu_contenedor.classList.toggle('activar_menu_contenedor')
+    columnaDerecha.classList.toggle("activar_columnaDerecha")
+}
+
+</script>
+</html>
