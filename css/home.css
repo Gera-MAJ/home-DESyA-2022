@@ -212,6 +212,7 @@
         left: 20px;
         top: 20px;
         background-color: rgb(255, 255, 255);
+        transition: top 100ms;
     }
         .active_menu_movil {
             background-color: #08A6D6;
