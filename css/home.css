@@ -6,7 +6,7 @@
 
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
 
-    @media screen and (max-width: 2000px){
+    @media screen and (max-width: 2000px) and (orientation: landscape){
         .menu_contenedor{
             display: none;
         }
@@ -203,15 +203,42 @@
 
     
     /* acá vamos a colocar todo lo que corresponde al menu hamburguesa nuevo */
+    .menu_movil {
+        border: 3px solid rgb(12, 11, 11);
+        z-index: 4;
+        height: 60px;
+        position: fixed;
+        width: 600px;
+        left: 20px;
+        top: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+        .active_menu_movil {
+            background-color: #08A6D6;
+            z-index: 4;
+            height: 60px;
+            position: fixed;
+            width: 600px;
+            left: 20px;
+            top: 0px;
+        }
+            .menu_movil img {
+                margin: center;
+                width: 150px;
+                float: left;
+                margin-left: 200px;
+            }
+
     .menu_contenedor{
         display: block;
         width: 40px;
         height: 40px;
+        margin-left: 530px;
+        margin-top: 15px;
         /* background-color: red; */
-        position: absolute;
-        top: 3%;
-        right: -48%;
-        z-index: 3;
+        /* position: absolute; */
+        /* top: 3%; */
+        /* right: -48%; */
         cursor: pointer;
     }
 
@@ -241,6 +268,7 @@
     .active_line3_bars {
         transform: rotate(-45deg) translate(1px, 0px);
     }
+    
     
     /* aca empieza los estilos fuera del menu */
     .columnaDerecha{
