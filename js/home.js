@@ -19,6 +19,7 @@ function activarMenu(){
 
     menu_contenedor.classList.toggle('activar_menu_contenedor')
     columnaDerecha.classList.toggle("activar_columnaDerecha")
+    barra.classList.toggle("active_menu_movil_barra")
 }
 
 function activarMenuMovil(){

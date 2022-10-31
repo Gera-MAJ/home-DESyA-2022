@@ -204,25 +204,26 @@
     
     /* acá vamos a colocar todo lo que corresponde al menu hamburguesa nuevo */
     .menu_movil {
-        border: 3px solid rgb(12, 11, 11);
-        z-index: 4;
+        /* border: 3px solid rgb(12, 11, 11); */
+        z-index: 2;
         height: 60px;
         position: fixed;
-        width: 600px;
-        left: 20px;
+        width: 100%;
         top: 20px;
         background-color: rgb(255, 255, 255);
-        transition: top 100ms;
+        transition: top 50ms;
     }
         .active_menu_movil {
-            background-color: #08A6D6;
-            z-index: 4;
+            background-color: rgb(255, 255, 255);
             height: 60px;
             position: fixed;
-            width: 600px;
-            left: 20px;
+            width: 100%;
+            left: 0px;
             top: 0px;
         }
+            .active_menu_movil_barra {
+                background-color: aliceblue;
+            }
             .menu_movil img {
                 margin: center;
                 width: 150px;
@@ -276,18 +277,18 @@
         /* position: absolute; */
         position: absolute;
         width: 800px;
-        height: 2200px;
+        height: 3000px;
         background-color: aliceblue;
         /* border: 2px red solid; */
         z-index: 1;
-        top: 0%;
-        left: -820px;
+        top: -20px;
+        left: -850px;
         transition: left 300ms;
         margin: 20px 20px 10px 40px;
     }
     
     .activar_columnaDerecha {
-        left: -20px;
+        left: -40px;
     }
 
     #contenedor-der {
