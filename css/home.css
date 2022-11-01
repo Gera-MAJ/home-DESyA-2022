@@ -6,7 +6,11 @@
 
 /* aca va todo lo que corresponde a la columna de la IZQUIERDA */
 
-    @media screen and (max-width: 2000px) and (orientation: landscape){
+    @media screen and (max-width: 2000px){
+        .menu_movil {
+            display: none;
+        }
+
         .menu_contenedor{
             display: none;
         }
@@ -205,6 +209,7 @@
     /* acá vamos a colocar todo lo que corresponde al menu hamburguesa nuevo */
     .menu_movil {
         /* border: 3px solid rgb(12, 11, 11); */
+        display: block;
         z-index: 2;
         height: 60px;
         position: fixed;
