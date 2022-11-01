@@ -10,7 +10,7 @@ window.addEventListener('scroll', activarMenuMovil)
 const line1 = document.querySelector(".line1_bars");
 const line2 = document.querySelector(".line2_bars");
 const line3 = document.querySelector(".line3_bars");
-const barra = document.querySelector(".menu_movil")
+const barra = document.querySelector(".menu_movil");
 
 function activarMenu(){
     line1.classList.toggle("active_line1_bars")
@@ -19,7 +19,7 @@ function activarMenu(){
 
     menu_contenedor.classList.toggle('activar_menu_contenedor')
     columnaDerecha.classList.toggle("activar_columnaDerecha")
-    barra.classList.toggle("active_menu_movil_barra")
+    
 }
 
 function activarMenuMovil(){
