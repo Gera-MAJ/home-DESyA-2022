@@ -25,3 +25,5 @@ function activarMenu(){
 function activarMenuMovil(){
     barra.classList.toggle("active_menu_movil", window.scrollY>88)
 }
+
+
