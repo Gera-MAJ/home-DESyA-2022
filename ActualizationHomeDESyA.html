@@ -7,9 +7,9 @@
 </head>
 <body>
 
-<section class="columnIzq">
+<section class="conteiner-izq">
     <ul>
-        <li><a href="https://des-tuc.infd.edu.ar/sitio/curso-introductorio-2023/" id="curso-introductorio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portada-curso-introductorio-2023.jpg" alt="imagen01" class="imagen"></a></li>
+        <li><a href="https://des-tuc.infd.edu.ar/sitio/curso-introductorio-2023/" id="curso-introductorio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portada-curso-introductorio-2023.jpg" alt="imagen01" class="imagen" id="img-cursoIntroductorio"></a></li>
         
         <li> <a href="https://sites.google.com/view/oferta-2021-gestin-estatal/inicio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portadas-fijas-sitio-DESyA-calendario.jpg" alt="imagen03" class="imagen"></a></li>
         
@@ -32,7 +32,7 @@
         
 </section>    
 
-<div id="contenedor-der">
+<div id="conteiner-der">
     <section id="noticias">
         <article id="noticia-destacada">
             <!-- <h2>Noticia Descatada</h2> -->
@@ -77,8 +77,28 @@
 -->
 
 <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    #img-cursoIntroductorio{
+        max-width: 600px;
+        max-height: 200px;
+    }
+
+    .acceso01 ul li > img {
+        aspect-ratio: 1 / 1;
+        width: 100px;
+
+    }
 </style>
 </body>
 </html>
