@@ -154,6 +154,9 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        .active_line1_bars {
+            transform: rotate(45deg) translate(-5px, -2px);
+        }
         .line2_bars {
             background-color: black;
             position: absolute;
@@ -162,6 +165,9 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%);
+        }
+        .active_line2_bars {
+            opacity: 0;
         }
         .line3_bars {
             background-color: black;
@@ -172,7 +178,29 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        .active_line3_bars {
+            transform: rotate(-45deg) translate(1px, 0px);
+        }
     }
 </style>
+
+<script>
+    const columnaDerecha = document.querySelector('.conteiner-der');
+    const menu_contenedor = document.querySelector('.menu_movil')
+    const line1 = document.querySelector(".line1_bars");
+    const line2 = document.querySelector(".line2_bars");
+    const line3 = document.querySelector(".line3_bars");
+    const barra = document.querySelector(".menu_movil");
+
+    document.querySelector('.menu_movil').addEventListener('click', activarMenu)
+
+    function activarMenu(){
+        line1.classList.toggle("active_line1_bars")
+        line2.classList.toggle("active_line2_bars")
+        line3.classList.toggle("active_line3_bars")
+        menu_contenedor.classList.toggle('activar_menu_contenedor')
+        columnaDerecha.classList.toggle("activar_columnaDerecha")
+    }
+</script>
 </body>
 </html>
