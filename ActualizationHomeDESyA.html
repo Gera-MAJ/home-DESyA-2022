@@ -8,6 +8,15 @@
 <body>
 
 <section class="conteiner-izq">
+
+    <section class="menu_movil">
+        <div class="menu_contenedor">
+            <span class="line1_bars"></span>
+            <span class="line2_bars"></span>
+            <span class="line3_bars"></span>
+        </div>
+    </section>
+
     <ul>
         <a href="https://des-tuc.infd.edu.ar/sitio/curso-introductorio-2023/" id="curso-introductorio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portada-curso-introductorio-2023.jpg" alt="imagen01" class="imagen" id="img-cursoIntroductorio"></a>
         
@@ -29,7 +38,7 @@
         
 </section>    
 
-<div id="conteiner-der">
+<div class="conteiner-der">
     <section id="noticias">
         <article id="noticia-destacada">
             <!-- <h2>Noticia Descatada</h2> -->
@@ -92,8 +101,11 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        
+        align-items: center;
         padding: 1em;
-    }    
+    }
+    
 
     @media screen and (max-width: 3000px){
         
@@ -113,10 +125,21 @@
     }
 
     @media screen and (max-width: 750px){
-        .conteiner-izq,
-        .conteiner-der{
+        
+        .conteiner-izq{
             grid-column: 1 / 3;
-            
+        }
+        .conteiner-der {
+            display: none;
+        }
+        .menu_movil {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            background-color: rgb(211, 57, 30);
+            width: 60px;
+            height: 60px;   
+            left: 85%;
         }
     }
 </style>
