@@ -135,10 +135,13 @@
         }
         .conteiner-der {
             display: none;
+            opacity: 0;
         }
         .active_conteiner-der {
             display: block;
             z-index: 1;
+            opacity: 100%;
+            transition: opacity 1s ease-in-out;
         }
         .menu_movil {
             display: block;
