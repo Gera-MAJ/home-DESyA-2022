@@ -6,9 +6,6 @@
     <title>Nuevo Home Actulizado</title>
 </head>
 <body>
-
-<section class="conteiner-izq">
-
     <section class="menu_movil">
         <div class="menu_contenedor">
             <span class="line1_bars"></span>
@@ -16,6 +13,7 @@
             <span class="line3_bars"></span>
         </div>
     </section>
+<section class="conteiner-izq">
 
     <ul>
         <a href="https://des-tuc.infd.edu.ar/sitio/curso-introductorio-2023/" id="curso-introductorio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portada-curso-introductorio-2023.jpg" alt="imagen01" class="imagen" id="img-cursoIntroductorio"></a>
@@ -132,13 +130,20 @@
         .conteiner-izq{
             grid-column: 1 / 3;
         }
+        .active_conteiner-izq {
+            display: none;
+        }
         .conteiner-der {
             display: none;
+        }
+        .active_conteiner-der {
+            display: block;
+            z-index: 1;
         }
         .menu_movil {
             display: block;
             position: fixed;
-            z-index: 1;
+            z-index: 2;
             background-color: aliceblue;
             width: 60px;
             height: 60px;   
@@ -185,6 +190,7 @@
 </style>
 
 <script>
+    const columnaIzquierda = document.querySelector('.conteiner-izq')
     const columnaDerecha = document.querySelector('.conteiner-der');
     const menu_contenedor = document.querySelector('.menu_movil')
     const line1 = document.querySelector(".line1_bars");
@@ -192,14 +198,15 @@
     const line3 = document.querySelector(".line3_bars");
     const barra = document.querySelector(".menu_movil");
 
-    document.querySelector('.menu_movil').addEventListener('click', activarMenu)
+    barra.addEventListener('click', activarMenu)
 
     function activarMenu(){
         line1.classList.toggle("active_line1_bars")
         line2.classList.toggle("active_line2_bars")
         line3.classList.toggle("active_line3_bars")
-        menu_contenedor.classList.toggle('activar_menu_contenedor')
-        columnaDerecha.classList.toggle("activar_columnaDerecha")
+        
+        columnaDerecha.classList.toggle("active_conteiner-der")
+        columnaIzquierda.classList.toggle("active_conteiner-izq")
     }
 </script>
 </body>
