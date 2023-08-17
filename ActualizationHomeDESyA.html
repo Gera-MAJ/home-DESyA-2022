@@ -13,8 +13,8 @@
             <span class="line3_bars"></span>
         </div>
     </section>
-<section class="conteiner-izq">
 
+    <section class="conteiner-izq">
     <ul>
         <a href="https://des-tuc.infd.edu.ar/sitio/curso-introductorio-2023/" id="curso-introductorio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/02/Portada-curso-introductorio-2023.jpg" alt="imagen01" class="imagen" id="img-cursoIntroductorio"></a>
         
@@ -34,7 +34,7 @@
              
         </ul>
         
-</section>    
+    </section>    
 
 <div class="conteiner-der">
     <section id="noticias">
@@ -91,17 +91,17 @@
 
     body{
         display: grid;
-        grid-template-columns: auto auto;   
+        grid-template-columns: auto auto;  
         }
 
     .conteiner-izq,
     .conteiner-der{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        
+        flex-wrap: nowrap;
         align-items: center;
-        padding: 1em;
+        padding: 2em 1em 1em 1em;
+        margin-top: 2em;
     }
     
 
@@ -136,6 +136,7 @@
         .conteiner-der {
             display: none;
             opacity: 0;
+            padding-left: 0;
         }
         .active_conteiner-der {
             display: block;
@@ -157,8 +158,9 @@
             background-color: rgba(240, 248, 255, 0);
             width: 60px;
             height: 60px;   
-            left: 85%;
+            left: 83%;
         }
+            
         .line1_bars {
             background-color: black;
             position: absolute;
