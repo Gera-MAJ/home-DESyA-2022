@@ -54,9 +54,9 @@
     
         <div class="acceso01">
             <ul>
-                <li><a href="https://sites.google.com/view/oferta-2021-gestin-estatal/inicio" target="_blank" rel="noopener">Carreras 2023</a><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/carreras-02.png" alt="icono01" class="imagen"></li>
+                <li><a href="https://sites.google.com/view/oferta-2021-gestin-estatal/inicio" target="_blank" rel="noopener">Carreras 2023</a> <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/carreras-02.png" alt="icono01" class="imagen"></li>
 
-                <li><a href="https://des-tuc.infd.edu.ar/sitio/formacion-docente-2/">Formación Docente</a><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/65882.png" alt="icono02" class="imagen"></li>
+                <li><a href="https://des-tuc.infd.edu.ar/sitio/formacion-docente-2/">Formación Docente </a> <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/65882.png" alt="icono02" class="imagen"></li>
                 
                 <li><a href="https://des-tuc.infd.edu.ar/sitio/tecnico-profesional-version-2/">Formación Técnico Profesional</a><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/tecnico-01.png" alt="icono02" class="imagen"></li>
                 
@@ -107,6 +107,9 @@
         padding: 2em 1em 1em 1em;
         margin-top: 2em;
     }
+    .active_conteiner-der {
+        padding: 1.5em 0 0 0;
+    }
 
     @media screen and (max-width: 3000px){
         
@@ -155,27 +158,31 @@
             transition: opacity 1s ease-in-out;
         }
         #noticia-destacada {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: auto;
-            padding-left: 1em;
+            margin-bottom: 1em;
         }
             #noticia-destacada img {
                 width: 33em;
-                padding-left: 1em;
+                
             }
                 #noticia-destacada a {
                     text-decoration: none;
                     padding: 0.5em;
                 }
                     #noticia-destacada p{
-                        text-align: center;
+                        text-align: left;
                         width: 33em;
-                        padding-left: 1em;
+                        
                     }
                         #noticia-destacada h3{
                             width: 26em;
                             text-align: center;
                             margin: auto;
-                            margin-top: 1em;
+                            font-size: 1.3em;
+                            color: #08A6D6;
                         }
                         
         .menu_movil {
@@ -233,7 +240,8 @@
             width: 33em;
             margin: auto;
         }
-        .acceso01 ul li{
+
+        .acceso01 ul li {
             list-style: none;
             border: 3px solid #08A6D6;
             border-top: none;
@@ -243,6 +251,7 @@
             display: flex;
             align-items: center;
             width: 100%;
+            padding: 0.5em;
         }
         .acceso01 ul li a{
             text-decoration: none;
@@ -251,12 +260,14 @@
             font-size: 1.4em;
             margin-left: 0;
             position: relative;
-            left: 1em;
+            left: 1.1em;
+            justify-content: center;
+            order: 2; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
         }
         .acceso01 ul li > img {
-            width: 5em;
-            position: relative;
-            left: start;  
+            width: 4.2em;
+            display: block;
+            order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
         }
         .acceso01 ul li a:hover ~ img{
             transform: scale(1.2);
