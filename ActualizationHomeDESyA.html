@@ -242,45 +242,47 @@
             display: none;
             opacity: 0;
             padding-left: 0;
+            
         }
         .active_conteiner-der {
             display: block;
             z-index: 1;
             opacity: 100%;
             transition: opacity 1s ease-in-out;
+            padding: 4em;
         }
 
         #noticias {
             margin: auto;
-            width: 80%;
+            width: 90%;
         }
-        #noticia-destacada {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: auto;
-            margin-bottom: 1em;
-        }
-            #noticia-destacada img {
-                width: 33em;
-                
+            #noticia-destacada {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 1em;
             }
-                #noticia-destacada a {
-                    text-decoration: none;
-                    padding: 0.5em;
+                #noticia-destacada img {
+                    width: 33em;
+                    
                 }
-                    #noticia-destacada p{
-                        text-align: left;
-                        width: 33em;
-                        
+                    #noticia-destacada a {
+                        text-decoration: none;
+                        padding: 0.5em;
                     }
-                        #noticia-destacada h3{
-                            width: 26em;
-                            text-align: center;
-                            margin: auto;
-                            font-size: 1.3em;
-                            color: #08A6D6;
+                        #noticia-destacada p{
+                            text-align: left;
+                            width: 33em;
+                            
                         }
+                            #noticia-destacada h3{
+                                
+                                text-align: center;
+                                margin: auto;
+                                font-size: 1.3em;
+                                color: #08A6D6;
+                            }
                         
         .menu_movil {
             display: block;
@@ -331,49 +333,50 @@
             transform: rotate(-45deg) translate(-2px, -36px);
             background-color:rgb(231, 29, 29);
         }
-        .acceso01 ul {
-            display: flex;
-            flex-direction: column;
-            width: 33em;
-            margin: auto;
-        }
 
-        .acceso01 ul li {
-            list-style: none;
-            border: 3px solid #08A6D6;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            padding: 0.5em;
-        }
-        .acceso01 ul li a{
-            text-decoration: none;
-            color: #066f8f;
-            font-weight: bold;
-            font-size: 1.4em;
-            margin-left: 0;
-            position: relative;
-            left: 1.1em;
-            justify-content: center;
-            order: 2; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
-        }
-        .acceso01 ul li > img {
-            width: 4.2em;
-            display: block;
-            order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
-        }
-        .acceso01 ul li a:hover ~ img{
-            transform: scale(1.2);
-            transition: 200ms ease-in-out;
-        }
-        .acceso01 ul li a:hover{
-            transform: scale(1.1);
-            transition: 200ms ease-in-out;
-        }
+            .acceso01 ul {
+                display: flex;
+                flex-direction: column;
+                width: 33em;
+                margin: auto;
+            }
+
+                .acceso01 ul li {
+                    list-style: none;
+                    border: 3px solid #08A6D6;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0.5em;
+                }
+                    .acceso01 ul li a{
+                        text-decoration: none;
+                        color: #066f8f;
+                        font-weight: bold;
+                        font-size: 1.4em;
+                        margin-left: 0;
+                        position: relative;
+                        left: 1.1em;
+                        justify-content: center;
+                        order: 2; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
+                    }
+                        .acceso01 ul li > img {
+                            width: 4.2em;
+                            display: block;
+                            order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
+                        }
+                            .acceso01 ul li a:hover ~ img{
+                                transform: scale(1.2);
+                                transition: 200ms ease-in-out;
+                            }
+                                .acceso01 ul li a:hover{
+                                    transform: scale(1.1);
+                                    transition: 200ms ease-in-out;
+                                }
     }
 </style>
 
