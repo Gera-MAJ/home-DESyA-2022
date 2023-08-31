@@ -24,17 +24,51 @@
         
         <div class="second-conteiner-izq">
 
-            <a href="https://sites.google.com/view/direcciondenivelsuperior/inicio?authuser=0" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/20221020_155128_0000.png" alt="imagen09" class="imagen"></a>
+            <a href="https://sites.google.com/view/direcciondenivelsuperior/inicio?authuser=0" target="_blank" rel="noopener">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/20221020_155128_0000.png" alt="imagen09" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section>      
+            </a>
             
             <!-- El target=_blank se colocar para que el enlace se abra en una pestaña nueva -->
-            <a href="https://des-tuc.infd.edu.ar/sitio/revista-huellas/" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/04/Revista-Huellas-2.png" alt="imagen05" class="imagen"></a>
-            <a href="https://des-tuc.infd.edu.ar/sitio/repositorio-de-practicas-profesionales/" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/7.png" alt="imagen07" class="imagen"></a>
+            <a href="https://des-tuc.infd.edu.ar/sitio/revista-huellas/" rel="noopener">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2023/04/Revista-Huellas-2.png" alt="imagen05" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section> 
+            </a>
+
+            <a href="https://des-tuc.infd.edu.ar/sitio/repositorio-de-practicas-profesionales/" target="_blank" rel="noopener">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/7.png" alt="imagen07" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section>
+            </a>
             
             <!-- <li><a href="https://des-tuc.infd.edu.ar/sitio/como-solicito-el-taller-tic-tac-en-mi-instituto/"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/6.png" alt="imagen06" class="imagen"></a></li> -->
                 
-            <a href="https://des-tuc.infd.edu.ar/sitio/sonidos-ies-producciones-de-estudiantes-y-docentes/"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/2.png" alt="imagen02" class="imagen"></a>
-            <a href="https://sites.google.com/view/semana-de-educacion-superior/inicio" target="_blank" rel="noopener"><img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/8.png" alt="imagen08" class="imagen"></a>
+            <a href="https://des-tuc.infd.edu.ar/sitio/sonidos-ies-producciones-de-estudiantes-y-docentes/">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/2.png" alt="imagen02" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section>  
+            </a>
 
+            <a href="https://sites.google.com/view/semana-de-educacion-superior/inicio" target="_blank" rel="noopener">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/8.png" alt="imagen08" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section> 
+            </a>
+
+            <a href="https://sites.google.com/view/semana-de-educacion-superior/inicio" target="_blank" rel="noopener">
+                <section>
+                    <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/8.png" alt="imagen08" class="imagen">
+                    <h4>Primer enlace</h4>
+                </section>
+                
+            </a>
         </div>        
     </section>    
 
@@ -120,14 +154,26 @@
     .second-conteiner-izq{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 0.5em;
+        gap: 1em;
         margin-top: 1em;
         max-width: 100%;
+        
     }
         .second-conteiner-izq a img{
-            width: 80%;
+            width: 100%;
             height: 100%;
         }
+            .second-conteiner-izq a{
+                height: 12em;
+                max-width: 100%;
+                border: 2px rgb(190, 190, 190) solid;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+                .second-conteiner-izq a h4{
+                    text-align: center;
+                    color: black;
+                }
     @media screen and (max-width: 3000px){
         
         #img-cursoIntroductorio{
