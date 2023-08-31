@@ -67,7 +67,6 @@
                     <img src="https://des-tuc.infd.edu.ar/sitio/wp-content/uploads/2022/10/8.png" alt="imagen08" class="imagen">
                     <h4>Primer enlace</h4>
                 </section>
-                
             </a>
         </div>        
     </section>    
@@ -155,7 +154,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em;
-        margin-top: 1em;
+        margin-top: 4em;
         max-width: 100%;
         
     }
@@ -164,7 +163,7 @@
             height: 100%;
         }
             .second-conteiner-izq a{
-                height: 12em;
+                height: 14em;
                 max-width: 100%;
                 border: 2px rgb(190, 190, 190) solid;
                 border-radius: 10px;
@@ -192,11 +191,16 @@
             max-width: 600px;
             max-height: 200px;
         }
-            .conteiner-izq a img:hover {
+            .conteiner-izq a > img:hover {
                 transform: scale(1.05);
                 transition: 200ms ease-in-out;
             }
-
+        
+        .second-conteiner-izq a:hover{
+            opacity: 90%;
+            transition: 200ms ease-in-out;
+        }
+       
         #noticias{
             max-width: 100%;
             border: 4px solid #39B8DE;
