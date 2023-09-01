@@ -169,7 +169,7 @@
             border-radius: 10px 10px 0px 0px;
         }
             .second-conteiner-izq a{
-                height: 14em;
+                height: 20em;
                 max-width: 100%;
                 border: 2px rgb(190, 190, 190) solid;
                 border-radius: 10px;
@@ -469,6 +469,15 @@
                                     transform: scale(1.1);
                                     transition: 200ms ease-in-out;
                                 }
+    }
+    @media screen and (max-width: 350px){
+        .second-conteiner-izq{
+            grid-template-columns: 1fr;
+            width: 80%;
+        }
+            .second-conteiner-izq a {
+                margin-bottom: 2em;
+            }
     }
 </style>
 
