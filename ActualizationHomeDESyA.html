@@ -261,7 +261,10 @@
             }
             .acceso01 ul li:hover {
                 border: 3px solid #39B8DE;
-                border-radius: 10px;
+                border-bottom: none;
+                border-top: none;
+                border-right: none;
+                /* border-radius: 10px; */
             }                    
                 .acceso01 ul li a{
                     text-decoration: none;
@@ -277,6 +280,7 @@
                 .acceso01 ul li > img {
                     width: 4.2em;
                     display: block;
+                    margin-left: 1em;
                     order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
                 }
                     .acceso01 ul li a:hover ~ img{
