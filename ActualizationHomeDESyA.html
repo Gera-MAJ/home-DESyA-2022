@@ -156,7 +156,7 @@
             border-radius: 8px 8px 0px 0px;
         }
             .second-conteiner-izq a{
-                height: 17em;
+                height: 16em;
                 max-width: 100%;
                 border: 2px rgb(190, 190, 190) solid;
                 border-radius: 11px;
@@ -164,16 +164,19 @@
             }
                 
                     .second-conteiner-izq a section h4{
-                        text-align: center; 
+                        text-align: left; 
                         color: black;
-                        margin-bottom: 0.9em;
-                        height: 1.3em;
+                        margin-left: 0.5em;
+                        margin-bottom: 0.6em;
+                        /* height: 1.3em; */
+                        font-size: 0.86em;
+                        width: 100%;
                     }
                         .second-conteiner-izq a section p{
                             width: 95%;
                             margin: auto;
                             color: black;
-                            font-size: 0.9em;
+                            font-size: 0.8em;
                             text-align: left;
                         }       
 
@@ -326,6 +329,12 @@
             .second-conteiner-izq a {
                 height: 20em;
             }
+                .second-conteiner-izq a section h4{
+                    font-size: 1em;
+                }
+                    .second-conteiner-izq a section p{
+                        font-size: 1em;
+                    }
                 
         .conteiner-der {
             display: none;
@@ -481,17 +490,21 @@
                                     transition: 200ms ease-in-out;
                                 }
     }
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 400px){
         .second-conteiner-izq{
             grid-template-columns: 1fr;
             width: 80%;
         }
             .second-conteiner-izq a {
                 margin-bottom: 1.5em;
+                height: 24em;
             }
-                .second-conteiner-izq a section img{
-                    aspect-ratio: 1/1;
+                .second-conteiner-izq a section p{
+                   font-size: 1.5em;
                 }
+                    .second-conteiner-izq a section h4{
+                        font-size: 1.7em;
+                    }
     }
 </style>
 
