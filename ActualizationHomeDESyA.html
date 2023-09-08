@@ -339,7 +339,6 @@
                 .acceso01 ul li > img {
                     width: 4.2em;
                     display: block;
-                    margin-left: 1em;
                     order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
                     
                 }
@@ -593,7 +592,6 @@
     for (const li of lista){
         li.addEventListener('click', handleLinkClick)
     }
-  
     //Esta función sirva, para llamar al href de la etiqueta a
     function handleLinkClick(event){
         event.preventDefault();
