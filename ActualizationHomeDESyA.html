@@ -293,15 +293,15 @@
         .acceso01 {
             margin-top: 4.2em;
             width: 80%;
-            border: 4px solid #08A6D6;
-            border-radius: 10px;
+            border: 4px solid #39B8DE;
+            border-radius: 20px;
             padding: 2.5em 2.4em;
         }
         .acceso01 ul {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
+            width: 90%;
             margin: auto;
         }
             .acceso01 ul li {
@@ -312,7 +312,7 @@
                 width: 100%;
                 padding: 0.7em;
                 margin: auto;
-                z-index: 1;
+                
             }
             .acceso01 ul li:hover {
                 border: 3px solid #39B8DE;
@@ -334,12 +334,14 @@
                     left: 1.1em;
                     justify-content: center;
                     order: 2; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
+                    
                 }
                 .acceso01 ul li > img {
                     width: 4.2em;
                     display: block;
                     margin-left: 1em;
                     order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
+                    
                 }
                     /* .acceso01 ul li a:hover ~ img{
                         transform: scale(1.2);
@@ -512,6 +514,7 @@
                     border-top: none;
                     border-left: none;
                     border-right: none;
+                    border-bottom: none;
                     padding: 0;
                     display: flex;
                     align-items: center;
@@ -534,14 +537,14 @@
                             display: block;
                             order: 1; /*El order me sirve para colocar los objetos en diferentes posiciones dentro de una misma etiqueta, pero esta etiqueta tiene que tener un display flex*/
                         }
-                            .acceso01 ul li a:hover ~ img{
+                            /* .acceso01 ul li a:hover ~ img{
                                 transform: scale(1.2);
                                 transition: 200ms ease-in-out;
                             }
                                 .acceso01 ul li a:hover{
                                     transform: scale(1.1);
                                     transition: 200ms ease-in-out;
-                                }
+                                } */
     }
     @media screen and (max-width: 400px){
         .second-conteiner-izq{
@@ -589,7 +592,8 @@
 
     for (const li of lista){
         li.addEventListener('click', handleLinkClick)
-    }    
+    }
+  
     //Esta función sirva, para llamar al href de la etiqueta a
     function handleLinkClick(event){
         event.preventDefault();
