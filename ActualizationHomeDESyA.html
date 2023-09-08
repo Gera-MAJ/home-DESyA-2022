@@ -588,16 +588,26 @@
     const div = document.querySelector(".acceso01");
     const ul = div.querySelector("ul");
     const lista = ul.querySelectorAll("li");
+    const links = ul.querySelectorAll("li a");
 
     for (const li of lista){
         li.addEventListener('click', handleLinkClick)
     }
+    //con este for puedo hacer que funciones las etiqueta a
+    for (const a of links){
+        a.addEventListener('click', linksA)
+    }
     //Esta función sirva, para llamar al href de la etiqueta a
     function handleLinkClick(event){
         event.preventDefault();
-        window.location.href = event.target.querySelector("a").href;
-    };
-    
+        console.log(event)
+        window.location.href = event.target.querySelector("a").href;   
+    }
+    function linksA(event){
+        event.preventDefault();
+        window.location.href = event.target.href
+    }
+        
     window.onload = function(){
         
     }
