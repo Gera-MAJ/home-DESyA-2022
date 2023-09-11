@@ -634,9 +634,17 @@
         event.preventDefault();
         window.location.href = event.target.href
     }
-        
+    
+    //con esta funcion, coloco todo lo que quiero que pase, una vez que la página haya terminado de cargar
     window.onload = function(){
-        
+        const loader = document.querySelector(".conteinerLoader")
+        const conteinerIzq = document.querySelector(".conteiner-izq")
+        const conteinerDer = document.querySelector(".conteiner-der")
+        const secondConteinerIzq = document.querySelector(".second-conteiner-izq") 
+        loader.style.display = "none"
+        conteinerIzq.style.display = "flex"
+        conteinerDer.style.display = "flex"
+        secondConteinerIzq.style.display = "grid"
     }
 
 </script>
