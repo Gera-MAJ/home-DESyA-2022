@@ -7,6 +7,14 @@
 </head>
 <body>
 
+    <section class="conteinerLoader">
+        <div class="circleOne"></div>
+        <div class="circleTwo"></div>
+        <span class="desya">
+            <h3>DESyA</h3>
+        </span>
+    </section>
+
     <section class="menu_movil">
         <div class="menu_contenedor">
             <span class="line1_bars"></span>
@@ -130,7 +138,7 @@
         padding: 0px;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    
     body{
         display: grid;
         grid-template-columns: auto 40%;
@@ -138,10 +146,10 @@
         min-width: 300px;
         margin: auto;
     }
-    
+
     .conteiner-izq,
     .conteiner-der{
-        display: flex;
+        display: none;/*cambiar a flex*/
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
@@ -153,7 +161,7 @@
         }
 
     .second-conteiner-izq{
-        display: grid;
+        display: none;/*cambiar a grid*/
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em; /*Esto sirve para dar espacio entre las fracciones del grid*/
         margin-top: 4em;
@@ -188,44 +196,6 @@
                             text-align: left;          
                         }  
 
-@keyframes loadingAnimation {
-  0% {
-    background-color: gray; /* Color gris inicial */
-  }
-  100% {
-    background-color: none; /* Color final deseado */
-  }
-}
-
-    .loadConteinerIzq {
-        background-color: #acacac;
-        margin: 0 0 1em 0;
-        border: 3px solid #acacac;
-        width: 100%;
-        height: 60%;
-        border-radius: 10px;
-        animation: loadingAnimation 2s infinite alternate;
-    }
-        .loadConteinerIzq a > img{
-            display: none;
-        }
-    
-    .loadSecondConteinerIzq a{
-        background-color: #acacac;
-    }
-        .loadSecondConteinerIzq a section h4{
-            background-color: #636363;
-            width: 90%;
-            display: none;
-        }
-            .loadSecondConteinerIzq a section p {
-                background-color: #636363;
-                display: none;
-            }
-                .loadSecondConteinerIzq a section img{
-                    display: none;
-                }
-
     @media screen and (max-width: 3000px){
         
         #img-cursoIntroductorio{
@@ -239,6 +209,23 @@
         }
 
 /*Animando las imágenes de la izquierda*/
+
+    .conteinerLoader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+        grid-column: 1 span 2;
+        z-index: 1;
+        width: 100vw;
+        
+    }
+        .conteinerLoader .circleOne{
+            border: 4px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
         .conteiner-izq a img{
             margin: 0em 0em 0.3em 0em;
             border-radius: 10px;
