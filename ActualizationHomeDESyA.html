@@ -220,18 +220,16 @@
 /*Animando las imágenes de la izquierda*/
 
     .conteinerLoader{
-        grid-column: 1 span 2;
+        grid-column: 1fr;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
-        grid-column: 1 span 2;
         width: 100vw;
         height: 100vh;
         position: relative;
         transition: 200ms ease-in-out;
         z-index: 3;
-        background-color: aqua;
     }
         .conteinerLoader .circleOne{
             border: 10px solid white;
@@ -570,6 +568,7 @@
                            
     }
     @media screen and (max-width: 450px){
+    
         .second-conteiner-izq{
             grid-template-columns: 1fr;
             width: 90%;
