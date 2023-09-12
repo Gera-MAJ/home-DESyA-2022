@@ -146,7 +146,7 @@
         max-width: 1200px;
         min-width: 300px;
         margin: auto;
-        position: relative;
+        position: relative;      
         z-index: 1;
     }
 
@@ -158,7 +158,7 @@
         align-items: center;
         padding: 2em 1em 1em 1em;
         margin-top: 2em;
-        visibility: hidden;
+        /* visibility: hidden; */
         position: relative;
         z-index: 1;
     }
@@ -172,7 +172,7 @@
         gap: 1em; /*Esto sirve para dar espacio entre las fracciones del grid*/
         margin-top: 4em;
         max-width: 100%;
-        visibility: hidden;
+        /* visibility: hidden; */
         position: relative;
         z-index: 1;
     }
@@ -219,7 +219,7 @@
 
 /*Animando las imágenes de la izquierda*/
 
-    .conteinerLoader{
+    .conteinerMax .conteinerLoader{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -480,7 +480,7 @@
             width: 90%;
             height: 0.4em;
             top: 20%;
-            /* cuando usas translate negativo, es para centrar el el eje que le indiques, sea X o Y */
+            /* cuando usas translate negativo, es para centrar el eje que le indiques, sea X o Y */
             left: 50%;
             transform: translateX(-50%);
             transition: 200ms ease-in-out;
@@ -641,15 +641,15 @@
     //con esta funcion, coloco todo lo que quiero que pase, una vez que la página haya terminado de cargar
     window.onload = function(){
         const loader = document.querySelector(".conteinerLoader")
-        const conteinerIzq = document.querySelector(".conteiner-izq")
-        const conteinerDer = document.querySelector(".conteiner-der")
-        const secondConteinerIzq = document.querySelector(".second-conteiner-izq")
+        // const conteinerIzq = document.querySelector(".conteiner-izq")
+        // const conteinerDer = document.querySelector(".conteiner-der")
+        // const secondConteinerIzq = document.querySelector(".second-conteiner-izq")
         // const menuMovil = document.querySelector(".menu_movil")
 
         loader.style.display = "none"
-        conteinerIzq.style.visibility = "visible"
-        conteinerDer.style.visibility = "visible"
-        secondConteinerIzq.style.visibility = "visible"
+        // conteinerIzq.style.visibility = "visible"
+        // conteinerDer.style.visibility = "visible"
+        // secondConteinerIzq.style.visibility = "visible"
         // if(menuMovil.style.visibility == "visible"){
         //     menuMovil.style.visibility = "hidden"
         // }
