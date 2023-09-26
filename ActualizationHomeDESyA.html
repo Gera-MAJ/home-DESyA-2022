@@ -162,12 +162,12 @@
         position: absolute;
         background-color: rgba(0, 0, 0, 0.397);
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         z-index: 2;
         justify-content: center;
         align-items: center;
         backdrop-filter: blur(10px);
-        display: none;
+        display: none;  
     }
         .anuncio .cerrar {
             position: relative;
@@ -183,6 +183,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
+                transition: 200ms ease-in-out;
             }
                 .anuncio .cerrar .iconFix .bar01{
                     position: absolute;
@@ -684,6 +686,15 @@
     const ul = div.querySelector("ul");
     const lista = ul.querySelectorAll("li");
     const links = ul.querySelectorAll("li a");
+
+    const cerrarAnuncio = document.querySelector(".iconFix").addEventListener('click', cerrar)
+    const anuncio = document.querySelector(".anuncio")
+    const body = document.querySelector("body")
+
+    function cerrar (){
+        anuncio.style.display = "none"
+        body.style.overflowY = "visible"
+    }
 
     for (const li of lista){
         li.addEventListener('click', handleLinkClick)
