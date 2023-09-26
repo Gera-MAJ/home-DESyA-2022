@@ -6,6 +6,10 @@
     <title>Nuevo Home Actualizado</title>
 </head>
 <body>
+    <main class="anuncio">
+        <img src="/img/Banner Anuncio DESyA.png" alt="anuncio">
+    </main>
+
 <div class="conteinerMax">
     <section class="conteinerLoader">
         <div class="circleOne"></div>
@@ -139,6 +143,17 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     
+    .anuncio{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.397);
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
     .conteinerMax{
         display: grid;
         grid-template-columns: auto 40%;
@@ -148,6 +163,7 @@
         margin: auto;
         position: relative;      
         z-index: 1;
+        background-color: #f0f0f026;
     }
 
     .conteiner-izq,
@@ -600,6 +616,7 @@
                                 object-fit: fill;
                                 width: 100%;
                                 height: 20em;
+                                
                             }
     }
 </style>
@@ -649,21 +666,21 @@
     }
     
     //con esta funcion, coloco todo lo que quiero que pase, una vez que la página haya terminado de cargar
-    // window.onload = function(){
-    //     const loader = document.querySelector(".conteinerLoader")
-    //     // const conteinerIzq = document.querySelector(".conteiner-izq")
-    //     // const conteinerDer = document.querySelector(".conteiner-der")
-    //     // const secondConteinerIzq = document.querySelector(".second-conteiner-izq")
-    //     // const menuMovil = document.querySelector(".menu_movil")
+    window.onload = function(){
+        const loader = document.querySelector(".conteinerLoader")
+        // const conteinerIzq = document.querySelector(".conteiner-izq")
+        // const conteinerDer = document.querySelector(".conteiner-der")
+        // const secondConteinerIzq = document.querySelector(".second-conteiner-izq")
+        // const menuMovil = document.querySelector(".menu_movil")
 
-    //     loader.style.display = "none"
-    //     // conteinerIzq.style.display = "flex"
-    //     // conteinerDer.style.display = "flex"
-    //     // secondConteinerIzq.style.display = "grid"
-    //     // if(menuMovil.style.visibility == "visible"){
-    //     //     menuMovil.style.visibility = "hidden"
-    //     // }
-    // }
+        loader.style.display = "none"
+        // conteinerIzq.style.display = "flex"
+        // conteinerDer.style.display = "flex"
+        // secondConteinerIzq.style.display = "grid"
+        // if(menuMovil.style.visibility == "visible"){
+        //     menuMovil.style.visibility = "hidden"
+        // }
+    }
 
 </script>
 </div>
